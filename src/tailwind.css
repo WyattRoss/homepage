@@ -10,3 +10,8 @@
 .noki {
     font-family: "customNoki";
 }
+
+/* I hate having to do this, but yew_icons seems to be forcing my hand */
+svg {
+    @apply stroke-gray-300 hover:stroke-sky-300;
+}

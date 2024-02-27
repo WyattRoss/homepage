@@ -1,11 +1,9 @@
 use yew::prelude::*;
-use crate::nav::RightNav;
 
 #[function_component(HomePage)]
 pub fn home_page() -> Html {
     html! {
-        <div class="flex">
-        <div class="grid content-center h-screen lg:w-11/12 sm:w-screen bg-zinc-950">
+        <div class="grid content-center h-screen bg-zinc-950">
             <div>
                 <p class="text-8xl noki text-zinc-50"> {"hi im wyatt"} </p>
             </div>
@@ -18,8 +16,6 @@ pub fn home_page() -> Html {
             <div>
                 <a href="/talk" class="text-zinc-50 noki"> {"get in touch"} </a>
             </div>
-        </div>
-            <RightNav/>
         </div>
     }
 }
