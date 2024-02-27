@@ -1,5 +1,5 @@
 use yew::prelude::*;
-use yew_icons::{IconId, Icon};
+use yew_icons::{Icon, IconId};
 
 #[function_component(RightNav)]
 pub fn right_nav() -> Html {

@@ -23,7 +23,7 @@ enum Route {
 
 fn switch(routes: Route) -> Html {
     match routes {
-        Route::Home => html!{<home::HomePage/>}, //is this really the correct pattern?
+        Route::Home => html! {<home::HomePage/>}, //is this really the correct pattern?
         Route::About => todo!(),
         Route::Contact => todo!(),
         Route::Projects => todo!(),
