@@ -19,3 +19,14 @@ pub fn right_nav() -> Html {
         </div>
     }
 }
+
+#[function_component(BackButton)]
+pub fn back_button() -> Html {
+    html! {
+        <div class="bg-zinc-950 absolute sticky bottom-0">
+            <div class="w-screen bg-zinc-950 bottom-0 left-0 p-3">
+                <a href="/" class="text-zinc-50 noki hover:underline"> {"← or go back home"} </a>
+            </div>
+        </div>
+    }
+}
