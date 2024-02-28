@@ -6,6 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+url = { version = "2.5.0", features = ["serde"] }
 yew = { version = "0.21.0", features = ["csr"] }
 yew-router = "0.18.0"
 yew_icons = {version = "0.8.0", features = ["LucideGithub", "LucideLinkedin"]}

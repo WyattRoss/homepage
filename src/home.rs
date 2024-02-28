@@ -3,7 +3,7 @@ use yew::prelude::*;
 #[function_component(HomePage)]
 pub fn home_page() -> Html {
     html! {
-        <div class="grid content-center h-full bg-zinc-950">
+        <div class="grid content-center h-full bg-zinc-950 h-screen">
             <div>
                 <p class="text-8xl noki text-zinc-50"> {"hi im wyatt"} </p>
             </div>
