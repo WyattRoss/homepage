@@ -16,7 +16,6 @@ jobs:
         with:
           node-version: '14'
       - run: npm install -D tailwindcss
-      - run: npx tailwindcss -i ./src/tailwindcss -o SOMEWHERE
 
       - uses: actions-rs/toolchain@v1
         with:
