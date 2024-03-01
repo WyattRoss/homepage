@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::nav::{BackButton, RightNav};
+use crate::nav::{RightNav};
 
 mod home;
 mod nav;

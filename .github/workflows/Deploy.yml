@@ -11,6 +11,13 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '14'
+      - run: npm install -D tailwindcss
+      - run: npx tailwindcss -i ./src/tailwindcss -o SOMEWHERE
+
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
@@ -19,18 +26,10 @@ jobs:
       - uses: jetli/trunk-action@v0.1.0
       - uses: jetli/wasm-bindgen-action@v0.1.0
 
-      - uses: actions/checkout@v2
-
-      - name: update tailwindcss
-        uses: ZoeyVid/tailwindcss-update@main
-        with:
-          input: src/tailwind.css
-          output: src/output.css
-          params: "--minify"
       - run: trunk build --release
 
       - uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./target
