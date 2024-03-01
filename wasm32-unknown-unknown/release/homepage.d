@@ -1,0 +1,1 @@
+/home/runner/work/homepage/homepage/target/wasm32-unknown-unknown/release/homepage.wasm: /home/runner/work/homepage/homepage/src/home.rs /home/runner/work/homepage/homepage/src/main.rs /home/runner/work/homepage/homepage/src/nav.rs /home/runner/work/homepage/homepage/src/projects.rs
