@@ -6,6 +6,7 @@ use crate::nav::{RightNav};
 mod home;
 mod nav;
 mod projects;
+mod about;
 
 #[derive(Clone, PartialEq, Routable)]
 enum Route {
@@ -25,7 +26,7 @@ enum Route {
 fn switch(routes: Route) -> Html {
     match routes {
         Route::Home => html! {<home::HomePage/>}, //is this really the correct pattern?
-        Route::About => todo!(),
+        Route::About => html! {<about::AboutMe/>},
         Route::Contact => todo!(),
         Route::Projects => html! {<projects::ProjectPage/>},
         _ => todo!(),
