@@ -15,12 +15,12 @@ fn create_projects() -> Vec<ProjectEntry> { //maybe deserialize JSON or a DB lat
         ProjectEntry {
             name: "EzASM".to_string(),
             link: Some(Url::parse("https://github.com/ezasm-org/EzASM").unwrap()),
-            description: "write this later".to_string(),
+            description: "An assembly-like programming language used in education. EzASM has a relatively small instruction set and the goal of the project was to allow students to learn low level concepts with minimal overhead (no syscalls, for instance).\n The app was written in Java, using Swing for the frontend. I personally worked on fleshing out the instruction set and a lot of the user-facing ergonomics (multiple editing tabs, hotkeys, etc.).".to_string(),
         },
         ProjectEntry {
             name: "REzASM".to_string(),
             link: Some(Url::parse("https://github.com/ezasm-org/EzASM").unwrap()),
-            description: "write this later (but in rust)".to_string(),
+            description: "A port of the above from Java to Rust. I personally worked on the lexer, big chunks of the simulator, and an increasing portion of the frontend (which was written in React). I also became the lead maintainer of the project at the end of 2023.".to_string(),
         },
     ]
 }
