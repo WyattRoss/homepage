@@ -14,7 +14,7 @@ pub fn home_page() -> Html {
                 <a href="/#/about" class="text-zinc-50 noki hover:underline"> {"learn about me"} </a>
             </div>
             <div class="py-1">
-                <a href="/#/talk" class="text-zinc-50 noki hover:underline"> {"get in touch"} </a>
+                <a href="mailto:wjross19@gmail.com" class="text-zinc-50 noki hover:underline"> {"get in touch"} </a>
             </div>
         </div>
     }

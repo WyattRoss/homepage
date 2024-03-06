@@ -16,8 +16,6 @@ enum Route {
     About,
     #[at("/projects")]
     Projects,
-    #[at("/talk")]
-    Contact,
     #[not_found]
     #[at("/404")]
     NotFound,
@@ -27,7 +25,6 @@ fn switch(routes: Route) -> Html {
     match routes {
         Route::Home => html! {<home::HomePage/>}, //is this really the correct pattern?
         Route::About => html! {<about::AboutMe/>},
-        Route::Contact => todo!(),
         Route::Projects => html! {<projects::ProjectPage/>},
         _ => todo!(),
     }
