@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::nav::{RightNav};
+use crate::nav::RightNav;
 
 mod home;
 mod nav;
@@ -36,14 +36,14 @@ fn switch(routes: Route) -> Html {
 #[function_component(App)]
 fn app() -> Html {
     html! {
-        <BrowserRouter>
+        <HashRouter>
             <div class="flex flex-row">
                 <div class="flex-auto lg:w-11/12 sm:w-screen">
                     <Switch<Route> render={switch}/>
                 </div>
                 <RightNav/>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     }
 }
 
