@@ -12,8 +12,8 @@ fn create_content() -> Vec<Heading> {
     vec![
         Heading {
             header: "Wyatt the Engineer".to_string(),
-            content: vec!["I'm a low level programming enthusiast. I'm experienced in C, C++ and Rust, but obviously I've dabbled in all sorts of other stuff.".to_string(),
-                          "I love trying out new problems, or learning about new ways of tackling old ones. Consequently, I'm constantly dabbling to try and find new ways to improve my development environment".to_string()],
+            content: vec!["I'm a low level programming enthusiast. I'm experienced in C, C++ and Rust, but obviously I've dabbled in all sorts of other stuff. ".to_string(),
+                          "I love trying out new problems, or learning about new ways of tackling old ones. Consequently, I'm constantly dabbling to try and find new ways to improve my development environment.".to_string()],
         },
         Heading {
             header: "Wyatt the Person".to_string(),
