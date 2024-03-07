@@ -1,4 +1,4 @@
-use yew::prelude::*;
+use yew::{prelude::*, virtual_dom::VNode};
 
 use crate::nav::BackButton;
 
@@ -23,10 +23,12 @@ fn create_content() -> Vec<Heading> {
 }
 
 fn render_heading(h: Heading) -> Html {
+
+    let paragraphs: Vec<VNode> = h.content.iter().map(|s| html! { <> <p class="text-zinc-50 noki"> {s.clone()} </p> <br/> </>}).collect();
     html! {
         <div class="p-5">
             <p class="text-zinc-50 noki text-3xl"> {h.header.clone()} </p>
-            <p class="text-zinc-50 noki"> {h.content.clone()} </p>
+            {paragraphs}
         </div>
     }
 }
