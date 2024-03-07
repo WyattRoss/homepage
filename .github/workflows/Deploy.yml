@@ -29,6 +29,8 @@ jobs:
 
       - run: awk -i inplace '{gsub(/\/homepage/,"./homepage");}1' dist/index.html && awk -i inplace '{gsub(/=\//,"=./");}1' dist/index.html #Maybe there's one command to do this, I don't care, it's small and fast anyway
 
+      - run: echo www.wyatt.rs > CNAME
+
       - uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
